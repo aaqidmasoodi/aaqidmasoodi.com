@@ -1,0 +1,20 @@
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid var(--black);
+    /* background-color: rgba(249, 249, 249); */
+}
+
+
+#logo {
+    color: orange;
+}
+
+.navbar__menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}

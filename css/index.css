@@ -1,0 +1,119 @@
+@import url('fonts.css');
+@import url('navbar.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #1f1f1f;
+    --white: #efefef;
+    --bright-blue: #007BFF;
+    --soft-purple: #6F42C1;
+    --teal: #17A2B8;
+}
+
+p {
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
+    color: var(--bright-blue);
+}
+
+a:hover {
+    color: var(--teal) !important;
+}
+
+a:visited {
+    color: var(--soft-purple);
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 1rem;
+
+}
+
+.left-sidebar {
+    grid-column: span 1;
+}
+
+.main-content {
+    
+    display: grid;
+    /* background-color: orange; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-auto-rows: minmax(150px, auto); */
+    padding: 1rem;
+    gap: .75rem;
+}
+
+
+.right-sidebar {
+    grid-column: span 1;
+}
+
+
+.intro {
+    /* background-color: yellow; */
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+.featured-repos {
+    padding: 1rem;
+}
+.repo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    list-style: circle;
+}
+
+
+.recent-papers {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+.article-link-list {
+    padding: 1rem;
+}
+
+.main-image {
+    grid-column: span 1;
+}
+
+/* SCREEN VARIATION */
+/* Extra small devices (portrait phones, less than 576px) */
+/* @media screen and (max-width: 575.98px) { } */
+
+/* Small devices (landscape phones, 576px and up) */
+/* @media screen and (max-width: 576px) {} */
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) { 
+    .main {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+/* @media screen and (max-width: 992px) { } */
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media screen and (max-width: 1200px) {} */
+
+/* Extra extra large devices (very large desktops, 1400px and up) */
+/* @media screen and (max-width: 1400px) { } */
