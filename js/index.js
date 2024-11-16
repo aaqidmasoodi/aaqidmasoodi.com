@@ -1,4 +1,4 @@
-import { fetchRepos } from "./repositories.js";
+import { fetchRepos } from "/repositories.js";
 
 
 fetchRepos();
